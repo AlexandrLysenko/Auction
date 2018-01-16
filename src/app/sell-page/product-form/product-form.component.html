@@ -1,0 +1,17 @@
+	<section class="product-form">
+		<h2 class="product-form__title title">Sell</h2>
+		<p>Create you own auction. Fill in all inputs</p>
+		<label for="product-title" class="label">Product Title
+			<input type="text" id="product-title" [(ngModel)] = 'newProduct.title'>
+		</label>
+		<label for="product-start-price" class="label">Start Price
+			<input type="number" id="product-start-price" [(ngModel)] = 'newProduct.startPrice' name="">
+		</label>
+		<label for="product-current-price" class="label">Current Price
+			<input type="number" id="product-title" [(ngModel)] = 'newProduct.currentPrice' name="">
+		</label>
+		<image-upload ></image-upload>	
+		<button (click)="addProduct()" >Save</button>
+	</section>
+
+	

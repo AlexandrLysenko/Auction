@@ -1,0 +1,73 @@
+.auctions {
+	background-color: #f1f2da;
+
+}
+
+.auctions__wrapper {
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.product {
+	position: relative;
+	display: flex;
+	width: 250px;
+	padding: 100px 25px 10px;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 2%;
+	margin: 0 auto 10px;
+	background-color: white;
+
+	-webkit-transition: all .25s ;
+	   -moz-transition: all .25s ;
+	    -ms-transition: all .25s ;
+	     -o-transition: all .25s ;
+	        transition: all .25s ;
+}
+
+.product:hover {
+	transform: scale(1.05) translateY(-6.5px);
+	-webkit-transition: all .25s ;
+	   -moz-transition: all .25s ;
+	    -ms-transition: all .25s ;
+	     -o-transition: all .25s ;
+	        transition: all .25s ;
+}
+
+.product__counter {
+	position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 15px;
+    background-color: #f2dc15;
+    border-radius: 9px 9px 0 0;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	opacity: 0.6;
+}
+
+.product__title {
+	display: block;
+	text-align: center;
+}
+.product__img {
+	width: 250px;
+}
+
+.product__price-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.price {
+	font-size: 20px;
+}
+
+.product__button {
+	width: 100%;
+}
+

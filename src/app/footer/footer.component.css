@@ -1,0 +1,45 @@
+.footer {
+	background-color: #2c2b30;
+	color: white;
+}
+
+.footer__wrapper {
+	align-items: flex-start;
+}
+
+
+.footer__section {
+	max-width: 320px;
+}
+
+.section__title {
+	font-size: 40px;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+.item__link {
+	margin-bottom: 10px;
+	-webkit-transition: all .25s ;
+	   -moz-transition: all .25s ;
+	    -ms-transition: all .25s ;
+	     -o-transition: all .25s ;
+	        transition: all .25s ;
+}
+
+.item__link:hover {
+	color: #f2dc15; 
+}
+
+.item__icon {
+	margin: 0 5px;
+}
+
+.email__form {
+	background-color: #f3f6fd;
+	padding: 15px;
+	border: none;
+	border-radius: 35px;
+	outline:none;
+}

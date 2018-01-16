@@ -1,1 +1,87 @@
 /* You can add global styles to this file, and also import other style files */
+.page {
+    font: 15px 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-indent: -9999px
+}
+a { 
+	text-decoration: none;
+}
+li {
+    list-style: none;	
+}
+img {
+}
+
+.logo,
+.item__link {
+    display: inline-block;
+}
+
+.banner {
+	padding: 0;
+    width: 100%;
+}
+
+.title {
+    font-size: 60px;
+    margin: 0 auto;
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+	padding: 20px 20px;
+}
+
+
+.wrapper-content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button {
+	display: block;
+	width: 150px;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	height: 40px;
+	background-color: #f2dc15;
+	text-transform: uppercase;
+	color: black;
+	border-radius: 20px;
+	margin: 15px 0;
+	outline: none;
+	border: none;
+	-webkit-transition: all .25s ;
+	   -moz-transition: all .25s ;
+	    -ms-transition: all .25s ;
+	     -o-transition: all .25s ;
+	        transition: all .25s ;
+}
+
+.button:hover {
+	background-color: black;
+	color: #f2dc15;
+}
+
+.input {
+	background-color: #f3f6fd;
+	border: none;
+	border-radius: 35px;
+	outline:none;
+	padding: 15px;
+}
+
+
+.banner__title {
+    color: white;
+    width: 80%;
+    font-weight: normal;
+}

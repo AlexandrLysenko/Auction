@@ -1,0 +1,24 @@
+
+
+<section class="auctions">
+		<h3 class="title">Current Auctions</h3>
+		<div class="wrapper-content auctions__wrapper" *ngIf="products.length > 0">
+		<div class="product" *ngFor="let product of products">
+		  <div class="product__counter">Countdown finished</div>
+		  <img src="images/product4.jpg" alt="product__img" class="product__img">
+		  <h3 class="product__title">{{product.title}}</h3>
+		  <div class="product__price-wrapper">
+		    <div class="product__price">
+		      <p class="price__text">Start Price</p>
+		      <strong class="price">{{product.startPrice}}$</strong>
+		    </div>
+		    <div class="product__price">
+		      <p class="price__text">Current Price</p>
+		      <strong class="price">{{product.currentPrice}}$</strong>
+		    </div>
+		  </div>
+		  <button class="product__button button" 
+		  (click) = 'submitABid(product)'>Submit a Bid</button>
+		</div>
+	</div>
+</section>
