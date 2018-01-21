@@ -7,13 +7,15 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { ProductFormComponent } from './sell-page/product-form/product-form.component';
 import { ProductComponent } from './buy-page/product/product.component';
+import { BuyPageComponent } from './buy-page/buy-page.component';
+import { SellPageComponent } from './sell-page/sell-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'contacts', component: ContactsPageComponent },
-  { path: 'sell', component: ProductFormComponent },
-  { path: 'buy', component: ProductComponent }
+  { path: 'sell', component: SellPageComponent },
+  { path: 'buy', component: BuyPageComponent }
 ];
 
 

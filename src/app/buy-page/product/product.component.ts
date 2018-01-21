@@ -8,6 +8,7 @@ import {ProductDataService} from '../../product-data.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
+  imgPath:any = 'images/';
 	
   constructor(private productDataService: ProductDataService) {
   }

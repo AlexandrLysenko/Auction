@@ -3,7 +3,7 @@ export class Product {
 	title: string;
 	startPrice: number;
 	currentPrice: number;
-	imgUrl: string;
+	imgUrl: string = 'images/';
 
 	constructor(values: Object = {}) {
     Object.assign(this, values);

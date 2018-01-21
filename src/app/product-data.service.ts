@@ -11,11 +11,11 @@ export class ProductDataService {
 
 	constructor() { 
 		this.products = [
-		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: ''},
-		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: ''},
-		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: ''},
-		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: ''},
-		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: ''},
+		{id: 0, title: 'Bike', startPrice: 100, currentPrice: 400, imgUrl: 'product2.jpg'},
+		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: 'product2.jpg'},
+		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: 'product2.jpg'},
+		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: 'product2.jpg'},
+		{id: 0, title: 'fwefw', startPrice: 100, currentPrice: 400, imgUrl: 'product2.jpg'},
 		]
 	}
 
@@ -38,7 +38,11 @@ getProductById(id: number): Product {
 	return this.products
 	.filter(product => product.id === id)
 	.pop();
-  }      
+  }
+
+getProductByTitle(str: string): Product[] {
+	return this.products.filter(product => product.title === str); 
+  }         
 }
 
 

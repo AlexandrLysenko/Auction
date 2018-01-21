@@ -1,6 +1,5 @@
-.home-banner__wrapper { 
-	height: 600px;
-    background: url("../../../images/banner-img.png") center;
-    background-size: cover;
+.home-banner__wrapper {
+  height: 600px;
+  background: url("../../../images/banner-img.png") center;
+  background-size: cover;
 }
-

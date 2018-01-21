@@ -1,26 +1,17 @@
 /*.....................Contacts form..............*/
 
-.contacts__form {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	max-width: 500px;
-	margin: 0 auto;
+.contacts-form {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.form__label {
-    font-size: 12px;
-    color: #838386;
-}
+.contacts-form__label {}
 
 
-.form__input , .form__textarea{
-	display: block;
-	width: 100%;
-	padding: 18px 25px;
-	margin: 10px 10px;
-	border: none;
-	outline: none;
-	border-radius: 35px;
-    background-color: #f3f6fd;
+.contacts-form__input,
+.contacts-form__textarea {
+  display: block;
+  width: 100%;
+  padding: 18px 25px;
+  margin: 10px 10px;
 }

@@ -21,6 +21,8 @@ import { ProductDataService } from './product-data.service';
 import { FormsModule } from '@angular/forms';
 import { GmapComponent } from './gmap/gmap.component';
 import { BuyPageComponent } from './buy-page/buy-page.component';
+import { BuyBannerComponent } from './buy-page/buy-banner/buy-banner.component';
+import { SellBannerComponent } from './sell-page/sell-banner/sell-banner.component';
 
 
 
@@ -41,7 +43,9 @@ import { BuyPageComponent } from './buy-page/buy-page.component';
     ContactsPageComponent,
     ContactsBannerComponent,
     GmapComponent,
-    BuyPageComponent
+    BuyPageComponent,
+    BuyBannerComponent,
+    SellBannerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,17 +1,24 @@
-	<section class="product-form">
-		<h2 class="product-form__title title">Sell</h2>
-		<p>Create you own auction. Fill in all inputs</p>
-		<label for="product-title" class="label">Product Title
-			<input type="text" id="product-title" [(ngModel)] = 'newProduct.title'>
-		</label>
-		<label for="product-start-price" class="label">Start Price
-			<input type="number" id="product-start-price" [(ngModel)] = 'newProduct.startPrice' name="">
-		</label>
-		<label for="product-current-price" class="label">Current Price
-			<input type="number" id="product-title" [(ngModel)] = 'newProduct.currentPrice' name="">
-		</label>
-		<image-upload ></image-upload>	
-		<button (click)="addProduct()" >Save</button>
-	</section>
-
-	
+<section class="product-form">
+  <h2 class="product-form__title title">Sell</h2>
+  <div class="wrapper-content product-form__wrapper">
+    <p>Create you own auction. Fill in all inputs</p>
+    <label for="product-title" class=" product-form__label label">Product Title
+      <input class="product-form__input input" type="text" id="product-title" [(ngModel)]='newProduct.title'>
+    </label>
+    <label for="product-start-price" class="product-form__label label">Start Price
+      <input class="product-form__input input" type="number" min="0" id="product-start-price" [(ngModel)]='newProduct.startPrice' name="">
+    </label>
+    <label for="image-load" class="product-form__label label image-load__label">
+      choose image of product
+      <input type="file" id="image-load" class="product-form__input image-load__input input">
+    </label>
+    <div class="category">
+      <select class="category__select">
+        <option class="select__option">Phones</option>
+        <option class="select__option">Bikes</option>
+        <option class="select__option">Jewelry</option>
+      </select>
+    </div>
+    <button class="button" (click)="addProduct()">Save</button>
+  </div>
+</section>
